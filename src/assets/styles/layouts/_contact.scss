@@ -1,0 +1,27 @@
+
+/* Contact Form Styles */
+form[name="contact"] {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 1rem;
+  font-family: $font-family-sans-serif;
+  color: $uoc-corporate;
+
+  .form-label {
+    font-family: $font-family-serif;
+    font-size: $font-size-medium;
+  }
+
+  .form-control {
+    font-size: $font-size-small;
+  }
+
+  button[type="submit"] {
+    background-color: $primary;
+    border-color: $primary;
+    font-size: $font-size-small;
+  }
+}

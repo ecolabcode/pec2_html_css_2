@@ -1,0 +1,59 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "indentation": 2,
+    "max-nesting-depth": 3,
+    "color-hex-length": "short",
+    "string-quotes": "single",
+    "selector-max-id": 0,
+    "selector-max-universal": 0,
+    "selector-max-type": [
+      2,
+      {
+        "ignore": [
+          "child",
+          "descendant"
+        ]
+      }
+    ],
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "attribute"
+        ]
+      }
+    ],
+    "selector-max-compound-selectors": 3,
+    "selector-max-specificity": "0,3,0",
+    "selector-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "declaration-no-important": true,
+    "function-url-quotes": "always",
+    "no-descending-specificity": true,
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-pattern": "^[_a-z]+[a-z0-9-]*$",
+    "scss/percent-placeholder-pattern": "^[_a-z]+[a-z0-9-]*$",
+    "scss/double-slash-comment-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "stylelint-commands"
+        ]
+      }
+    ],
+    "scss/selector-no-redundant-nesting-selector": true
+  },
+  "ignoreFiles": [
+    "dist/**/*.css"
+  ]
+}

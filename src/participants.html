@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -20,10 +21,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="participants.html">Participants</a>
+            <a class="nav-link active" aria-current="page" href="participants.html">Participants</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="article.html">Article</a>
@@ -36,37 +37,36 @@
     </div>
   </nav>
 </header>
-<main>
-  <!-- Main Content -->
-  <div class="container">
-    <div class="uoc-grid">
-      <picture class="uoc-grid__item uoc-grid__item--image animate__animated animate__fadeIn">
-        <source srcset="./assets/images/imagen1.jpeg?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/imagen1.jpeg?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo img-fluid" />
-      </picture>
-      <div class="uoc-grid__item uoc-grid__item--text animate__animated animate__bounceIn">
-        <p>Preparate antes de que suceda.</p>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="participants-grid">
+    <div class="participant animate__animated animate__fadeInLeft">
+      <img src="./assets/images/persona1.jpeg" alt="Person 1" class="participant__image img-fluid" />
+      <div class="participant__description">
+        <h2>Person 1</h2>
+        <p>Description of Person 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <picture class="uoc-grid__item uoc-grid__item--image animate__animated animate__fadeIn">
-        <source srcset="./assets/images/imagen2.jpeg?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/imagen2.jpeg?width=350" alt="Another Image" class="img-fluid" />
-      </picture>
-      <div class="uoc-grid__item uoc-grid__item--text">
-        <p>Conoce todos los secretos para hacer aparecer dinero magicamente solo tomandote fotos.</p>
+    </div>
+    <div class="participant animate__animated animate__fadeInLeft">
+      <img src="./assets/images/persona2.jpeg" alt="Person 2" class="participant__image img-fluid" />
+      <div class="participant__description">
+        <h2>Person 2</h2>
+        <p>Description of Person 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <picture class="uoc-grid__item uoc-grid__item--image animate__animated animate__fadeIn">
-        <source srcset="./assets/images/imagen3.jpeg?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/imagen3.jpeg?width=350" alt="Third Image" class="img-fluid" />
-      </picture>
-      <div class="uoc-grid__item uoc-grid__item--text">
-        <p>Aprende de los mejores expositores con exito en toda la galaxia.</p>
+    </div>
+    <div class="participant animate__animated animate__fadeInLeft">
+      <img src="./assets/images/persona3.jpeg" alt="Person 3" class="participant__image img-fluid" />
+      <div class="participant__description">
+        <h2>Person 3</h2>
+        <p>Description of Person 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
   </div>
-</main>
+</div>
 <include src="./views/footer.html"></include>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 </html>
+
