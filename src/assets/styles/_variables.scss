@@ -3,9 +3,9 @@
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #eb34b7;
+$uoc-corporate: #9F2B68;
 $uoc-masterbrand: #c0eb34;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 30%);
 
 $mqMinWidth: 420px;
 
@@ -17,6 +17,9 @@ $font-size-responsive-large: 8vw;
 $font-size-small: 1rem;
 $font-size-medium: 1.5rem;
 $font-size-large: 2rem;
+
+// Navbar margin
+$navbar-margin-bottom: 2rem;
 
 // Bootstrap variables
 $primary: $uoc-corporate;
